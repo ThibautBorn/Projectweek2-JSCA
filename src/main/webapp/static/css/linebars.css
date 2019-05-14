@@ -1,0 +1,63 @@
+article ul {
+    list-style: none;
+}
+
+article {
+    margin-bottom: 50px;
+}
+
+main {
+    padding-bottom: 50px;
+}
+
+h2.comp {
+    text-transform: capitalize;
+}
+
+div.container {
+    max-width:630px;
+    padding-right: 0px;
+    padding-left:0px;
+    margin-right:0px;
+    margin-left:0px;
+
+    /*Fix bootstrap */
+    box-sizing: border-box;
+}
+
+/*fix bootstrap */
+div.progress {
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: rgb(211, 216, 229);
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-sizing: border-box;
+}
+
+div.progress-bar{
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #337ab7;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    transition: width .6s ease;
+    box-sizing: border-box;
+}
+span.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+    box-sizing: border-box;
+}
+

@@ -1,0 +1,35 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
+
+<header>
+    <img src="static/images/logo.png" />
+    <ul class="account">
+        <c:if test="${userrole =='student'}">
+            <li><a id="account"><c:out value="${username}"/><span><br>Aangemeld als student</span></a></li>
+        </c:if>
+        <c:if test="${userrole =='teacher'}">
+            <li><a id="account"><c:out value="${username}"/><span><br>Aangemeld als onderwijzer</span></a></li>
+        </c:if>
+        <c:if test="${userrole =='admin'}">
+            <li><a id="account"><c:out value="${username}"/><span><br>Aangemeld als administrator</span></a></li>
+        </c:if>
+    </ul>
+    <nav>
+        <ul>
+            <li><a href="index">Home</a></li>
+            <li><a href="competences">
+                <c:if test="${userrole =='student'}">
+                    Behaalde
+                </c:if>
+                Competenties</a></li>
+            <c:if test="${teacher eq 'true'}">
+                <li><a href="studentResults">Resultaten</a></li>
+            </c:if>
+            <c:if test="${userrole == 'student' }">
+                <li><a href="test">Test</a></li>
+            </c:if>
+            <li><a href="logout">Log Uit</a></li>
+        </ul>
+    </nav>
+
+</header>

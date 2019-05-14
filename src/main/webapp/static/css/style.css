@@ -1,0 +1,314 @@
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, #B5DBEC 0%, #73B9D5 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body {
+    box-sizing: border-box;
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/cloud.png');
+    background-attachment: fixed;
+    background-repeat: repeat;
+}
+
+header {
+    color: white;
+    margin: auto;
+    max-width: 800px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+header img {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    min-height: 70px;
+    width: auto;
+}
+
+header ul.account {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+/* Show icon next to account link */
+header ul li a#account {
+    font-size: 1.2em;
+    color: black;
+    margin: 0px;
+    padding-left: 30px;
+    background-image: url('../images/account.png');
+    background-repeat: no-repeat;
+    width: 50px;
+    background-size: contain;
+}
+
+header ul li a#account span {
+    color: #444;
+    font-size: 0.75em;
+}
+
+nav {
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #1A2A66;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    border-bottom: 4px solid #1A2A66;
+}
+
+main {
+    box-sizing: border-box;
+    padding: 50px;
+    margin: auto;
+    max-width: 800px;
+    min-height: 70%;
+    border-radius: 5px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 3px 2px 5px 4px rgb(87, 139, 160), -2px 0px 4px 2px rgb(87, 139, 160);
+    margin-bottom: 50px;
+}
+
+main.login {
+    padding: 25px;
+    width: 500px;
+    max-width: none;
+    min-height: auto;
+    position: relative;
+    top: 30%;
+    transform: translateY(-30%);
+}
+
+main.addquestion input#questionvalue {
+    width: 100%;
+}
+
+main.addquestion input[type="text"] {
+    padding: 5px;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+
+main.addquestion select#grade,
+main.addquestion input#questionvalue
+{
+    padding: 10px;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+main.addquestion input[type="number"] {
+    max-width: 55px;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 0px;
+    border-radius: 3px;
+    appearance: textfield;
+}
+
+main.frontpage, main.resultaat, main.competences, main.addquestion {
+    min-height: auto;
+}
+
+main.frontpage {
+    background-image: url('../images/frontpage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1100px;
+    background-color: #BFD9FF;
+}
+
+main.frontpage p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    color: #222;
+}
+
+main.test div.answercontainer {
+    background-color: rgb(232, 234, 239);
+    border: 1px solid lightgray;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 4px;
+}
+
+main.competences article ul li h2 {
+    display: inline;
+}
+
+main h1 {
+    font-size: 2em;
+    color: #1A2A66;
+    margin-bottom: 15px;
+}
+
+main h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+main p {
+    margin-bottom: 20px;
+}
+
+main ul {
+    margin-left: 30px;
+    list-style-type: disc;
+}
+
+.error {
+    color: red;
+}
+
+@media screen and (max-width: 1366px) {
+    body {
+        padding-top: 0px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    header img {
+        position: relative;
+        margin-bottom: 10px;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        text-align: right;
+        margin-right: 25px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    nav ul li a:hover {
+        border-bottom: 2px solid #1A2A66;
+    }
+
+    ul.account {
+        display: none;
+    }
+
+    div.linkbutton {
+        float: none;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header img {
+        margin-bottom: 25px;
+
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+
+    nav {
+        text-align: left;
+        margin-left: unset;
+    }
+}
+.resultTable tr:nth-child(odd) {
+    background-color: #f2f2f2
+}
+
+.resultTable tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+.resultTable td, .resultTable th {
+    width: 5em;
+    padding: 10px 15px 10px 15px;
+
+}
+
+.resultTable {
+    border: 1px solid black;
+}
+
+.resultTable th {
+    border-bottom: 1px solid black;
+    background-color: #A4D3E7;
+}
+
+.resultTableDiv{
+    overflow-x:auto;
+    margin-bottom: 5em;
+}
+
+div#starttest:hover, input[type="submit"]:hover, div.linkbutton:hover {
+    background-color: steelblue;
+}
+
+div#starttest, input[type="submit"], div.linkbutton {
+    border-radius: 5px;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+    max-width: 300px;
+    background-color: rgb(42, 43, 48);
+}
+
+a.starttestlink, input[type="submit"], a.linkbutton {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+}
+
+div.linkbutton {
+    padding: 5px;
+    max-width: 150px;
+    font-size: 0.8em;
+    display: inline-block;
+    font-weight: normal;
+    float: right;
+    margin-right: 250px;
+}
